@@ -27,6 +27,10 @@ curl -sS https://getcomposer.org/installer | php
 ```
 git clone http://{projet}
 ```
+- Générer les assets de production
+```
+yarn encore production
+```
 
 # Créer une nouvelle page
 
