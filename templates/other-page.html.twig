@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Other Page{% endblock %}
+
+{% block main %}
+<div class="container marketing mt-5">
+    <h1>Other Opage</h1>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('other-page') }}
+{% endblock %}
