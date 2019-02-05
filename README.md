@@ -8,7 +8,7 @@
 # Création du projet en local
 - Clonage du boilerplate
 ```
-git clone https://github.com/shakealot/symfony-boilerplate.git [new_projet] |
+git clone https://github.com/shakealot/symfony-client-boilerplate.git [new_projet] |
 cd [new_projet]
 git remote add upstream https://github.com/shakealot/symfony-client-boilerplate.git
 git remote set-url origin git@github.com:shakealot/[new_project].git
