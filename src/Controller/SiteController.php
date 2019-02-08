@@ -12,14 +12,39 @@ class SiteController extends Controller
      */
     public function index()
     {
-        return $this->render('index.html.twig');
+        return $this->render('pages/index.html.twig');
     }
 
     /**
-     * @Route("/other-page", name="other_page")
+     * @Route("/musique", name="musique")
      */
-    public function otherPage()
+    public function musique()
     {
-        return $this->render('other-page.html.twig');
+        return $this->render('pages/musique.html.twig');
     }
+
+    /**
+     * @Route("/video", name="video")
+     */
+    public function video()
+    {
+        return $this->render('pages/video.html.twig');
+    }
+
+    /**
+     * @Route("/bio", name="bio")
+     */
+    public function bio()
+    {
+        return $this->render('pages/bio.html.twig');
+    }
+
+    /**
+     * @Route("/gallerie", name="gallerie")
+     */
+    public function gallerie()
+    {
+        return $this->render('pages/gallerie.html.twig');
+    }
+    
 }
