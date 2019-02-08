@@ -24,4 +24,12 @@ class DemoController extends Controller
     {
         return $this->render('demo/bootstrap.html.twig');
     }
+
+    /**
+     * @Route("/demo/other-page", name="demo_other_page")
+     */
+    public function otherPage()
+    {
+        return $this->render('demo/other-page.html.twig');
+    }
 }
