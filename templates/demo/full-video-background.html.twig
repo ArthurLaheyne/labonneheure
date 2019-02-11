@@ -1,0 +1,28 @@
+{% extends 'demo/base.html.twig' %}
+
+{% block title %}Fulll Video Background{% endblock %}
+
+{% block main %}
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    </video>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+        <h1>Fulll Video Background</h1>
+        <p>Lorem ipsum...</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" >Pause</button>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('full-video-background') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('full-video-background') }}
+{% endblock %}

@@ -19,7 +19,8 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('bootstrap', './assets/js/demo/bootstrap.js')
-    .addEntry('other-page', './assets/js/other-page.js')
+    .addEntry('other-page', './assets/js/demo/other-page.js')
+    .addEntry('full-video-background', './assets/js/demo/full-video-background.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // will require an extra script tag for runtime.js
