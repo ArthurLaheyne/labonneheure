@@ -34,19 +34,49 @@ yarn encore production
 
 # Créer une nouvelle page
 
-### CSS JS
-- Créer ```assets/css/nouvelle_page.scss```
-- Créer ```assets/js/nouvelle_page.js```
+### Controller
 ```
-// assets/js/nouvelle_page.js
-import '../css/nouvelle_page.scss';
+    /**
+     * @Route("/new-page", name="new_page")
+     */
+    public function newPage()
+    {
+        return $this->render('pages/new-page.html.twig');
+    }
 ```
+
+### Template
+- Créer ```templates/pages/new-page.html.twig```
 ```
-// webpack.config.js
-Encore
-    // ...
-    .addEntry('app', './assets/js/app.js')
-+     .addEntry('checkout', './assets/js/nouvelle_page.js')
-    // ...
+    {% extends 'base.html.twig' %}
+
+    {% block title %}New Page{% endblock %}
+
+    {% block main %}
+    <div class="container marketing mt-5">
+        <h1>New Opage</h1>
+    </div>
+    {% endblock %}
+
+    {% block stylesheets %}
+        {{ parent() }}
+        {{ encore_entry_link_tags('new-page') }}
+    {% endblock %}
 ```
-- Relancer la commande ```yarn run encore dev --watch```
+
+### Webpack
+```
+    .addEntry('new-page', './assets/js/new-page.js')
+```
+
+### JS
+- Créer ```assets/js/new-page.js```
+```
+import '../css/new-page.scss';
+```
+
+### CSS
+- Créer ```assets/css/new-page.scss```
+
+
+Relancer la commande ```yarn run encore dev --watch```

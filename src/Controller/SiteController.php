@@ -16,10 +16,10 @@ class SiteController extends Controller
     }
 
     /**
-     * @Route("/other-page", name="other_page")
+     * @Route("/new-page", name="new_page")
      */
-    public function otherPage()
+    public function newPage()
     {
-        return $this->render('other-page.html.twig');
+        return $this->render('pages/new-page.html.twig');
     }
 }
