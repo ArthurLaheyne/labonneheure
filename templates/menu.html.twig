@@ -6,12 +6,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item {{ app.request.get('_route') == 'demo' ? 'active' }}">
-                    <a class="nav-link" href="{{ path('demo') }}">Demo</a>
-                </li>
-                <li class="nav-item {{ app.request.get('_route') == 'other_page' ? 'active' }}">
-                    <a class="nav-link" href="{{ path('other_page') }}">Other page</a>
-                </li>
             </ul>
         </div>
     </nav>
