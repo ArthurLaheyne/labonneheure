@@ -45,23 +45,10 @@ yarn encore production
     }
 ```
 
-### Template
-- Créer ```templates/pages/new-page.html.twig```
+### Template, JS, CSS
 ```
-    {% extends 'base.html.twig' %}
-
-    {% block title %}New Page{% endblock %}
-
-    {% block main %}
-    <div class="container marketing mt-5">
-        <h1>New Opage</h1>
-    </div>
-    {% endblock %}
-
-    {% block stylesheets %}
-        {{ parent() }}
-        {{ encore_entry_link_tags('new-page') }}
-    {% endblock %}
+chmod +x commands.sh
+./commands.sh {new-page}
 ```
 
 ### Webpack
@@ -69,14 +56,11 @@ yarn encore production
     .addEntry('new-page', './assets/js/new-page.js')
 ```
 
-### JS
-- Créer ```assets/js/new-page.js```
-```
-import '../css/new-page.scss';
-```
-
-### CSS
-- Créer ```assets/css/new-page.scss```
-
 
 Relancer la commande ```yarn run encore dev --watch```
+
+### SCRIPTED
+```
+chmod +x commands.sh
+./commands.sh
+```
