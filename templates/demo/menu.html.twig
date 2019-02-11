@@ -12,6 +12,9 @@
                 <li class="nav-item {{ app.request.get('_route') == 'demo_other_page' ? 'active' }}">
                     <a class="nav-link" href="{{ path('demo_other_page') }}">Other page</a>
                 </li>
+                <li class="nav-item {{ app.request.get('_route') == 'demo_full_video_background' ? 'active' }}">
+                    <a class="nav-link" href="{{ path('demo_full_video_background') }}">Full Video Background</a>
+                </li>
             </ul>
         </div>
     </nav>
