@@ -36,8 +36,16 @@ class DemoController extends Controller
     /**
      * @Route("/demo/full-video-background", name="demo_full_video_background")
      */
-    public function fullVideoBackgroundPage()
+    public function fullVideoBackground()
     {
         return $this->render('demo/full-video-background.html.twig');
+    }
+
+    /**
+     * @Route("/demo/images-gallery", name="demo_images_gallery")
+     */
+    public function imagesGallery()
+    {
+        return $this->render('demo/images-gallery.html.twig');
     }
 }
