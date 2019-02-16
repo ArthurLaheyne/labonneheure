@@ -18,9 +18,12 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+
     .addEntry('bootstrap', './assets/js/demo/bootstrap.js')
     .addEntry('other-page', './assets/js/demo/other-page.js')
     .addEntry('full-video-background', './assets/js/demo/full-video-background.js')
+
+    .addEntry('demo-images-gallery', './assets/js/demo/images-gallery.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // will require an extra script tag for runtime.js

@@ -34,19 +34,33 @@ yarn encore production
 
 # Créer une nouvelle page
 
-### CSS JS
-- Créer ```assets/css/nouvelle_page.scss```
-- Créer ```assets/js/nouvelle_page.js```
+### Controller
 ```
-// assets/js/nouvelle_page.js
-import '../css/nouvelle_page.scss';
+    /**
+     * @Route("/new-page", name="new_page")
+     */
+    public function newPage()
+    {
+        return $this->render('pages/new-page.html.twig');
+    }
 ```
+
+### Template, JS, CSS
 ```
-// webpack.config.js
-Encore
-    // ...
-    .addEntry('app', './assets/js/app.js')
-+     .addEntry('checkout', './assets/js/nouvelle_page.js')
-    // ...
+chmod +x commands.sh
+./commands.sh {new-page}
 ```
-- Relancer la commande ```yarn run encore dev --watch```
+
+### Webpack
+```
+    .addEntry('new-page', './assets/js/new-page.js')
+```
+
+
+Relancer la commande ```yarn run encore dev --watch```
+
+### SCRIPTED
+```
+chmod +x commands.sh
+./commands.sh
+```
