@@ -26,6 +26,7 @@ Encore
     .addEntry('demo-images-gallery', './assets/js/demo/images-gallery.js')
 
     .addEntry('accueil', './assets/js/accueil.js')
+    .addEntry('musique', './assets/js/musique.js')
 
     // will require an extra script tag for runtime.js
     // but, you probably want this, unless you're building a single-page app

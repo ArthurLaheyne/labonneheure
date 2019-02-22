@@ -1,47 +1,55 @@
-h1 {
-    text-align: center;
-    margin-top: 100px;
-    color: white;
-    text-transform: uppercase;
-}
+.accueil {
 
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    z-index: -1;
-    -webkit-filter: blur(0px) brightness(43%) sepia(79%);
-    filter: blur(0px) brightness(43%) sepia(79%);
-}
-  
-/* Style the button used to pause/play the video */
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-  
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
+  main {
 
-#myBtnVolume {
-    position: fixed;
-    bottom: 50px;
-    right: 0;
-    margin: 0 20px 20px 0;
-    border-radius: 43px;
-    border: white solid 2px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background-color: black;
-    color: white;
+    h1 {
+        text-align: center;
+        margin-top: 100px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1;
+        -webkit-filter: blur(0px) brightness(43%) sepia(79%);
+        filter: blur(0px) brightness(43%) sepia(79%);
+    }
+      
+    /* Style the button used to pause/play the video */
+    #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+      
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+    }
+
+    #myBtnVolume {
+        position: fixed;
+        bottom: 50px;
+        right: 0;
+        margin: 0 20px 20px 0;
+        border-radius: 43px;
+        border: white solid 2px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+
+  }
+  
 }

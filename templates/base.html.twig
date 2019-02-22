@@ -12,7 +12,7 @@
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
     </head>
-    <body>
+    <body {% block body_attribute %}{% endblock %}>
         {% include 'menu.html.twig' %}
         <main role="main">
             {% block main %}{% endblock %}

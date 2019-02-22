@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Musique{% endblock %}
+{% block body_attribute %}class="musique"{% endblock %}
 
 {% block main %}
 <!-- Marketing messaging and featurettes
@@ -76,6 +77,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
+    {{ encore_entry_link_tags('musique') }}
 {% endblock %}
 
 {% block javascripts %}
