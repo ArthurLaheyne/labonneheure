@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La Bonne Heure{% endblock %}
+
+{% block main %}
+
+<!-- The video -->
+<video autoplay muted id="myVideo">
+    <source src="videos/la-bonne-heure-run.mp4" type="video/mp4">
+</video>
+
+<div class="container marketing">
+    <h1>Fulll Video Background</h1>
+    <p>Lorem ipsum...</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" >Pause</button>
+    <button id="myBtnVolume" ><i class="fas fa-volume-mute"></i></button>
+</div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('accueil') }}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('accueil') }}
+{% endblock %}

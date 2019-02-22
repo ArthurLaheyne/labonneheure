@@ -24,7 +24,8 @@ Encore
     .addEntry('full-video-background', './assets/js/demo/full-video-background.js')
 
     .addEntry('demo-images-gallery', './assets/js/demo/images-gallery.js')
-    //.addEntry('page2', './assets/js/page2.js')
+
+    .addEntry('accueil', './assets/js/accueil.js')
 
     // will require an extra script tag for runtime.js
     // but, you probably want this, unless you're building a single-page app

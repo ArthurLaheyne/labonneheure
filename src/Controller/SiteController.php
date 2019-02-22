@@ -8,11 +8,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class SiteController extends Controller
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/", name="accueil")
      */
-    public function index()
+    public function accueil()
     {
-        return $this->render('pages/index.html.twig');
+        return $this->render('pages/accueil.html.twig');
     }
 
     /**
