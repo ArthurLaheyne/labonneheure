@@ -48,4 +48,12 @@ class DemoController extends Controller
     {
         return $this->render('demo/images-gallery.html.twig');
     }
+
+    /**
+     * @Route("/demo/paralax", name="demo_paralax")
+     */
+    public function paralax()
+    {
+        return $this->render('demo/paralax.html.twig');
+    }
 }
