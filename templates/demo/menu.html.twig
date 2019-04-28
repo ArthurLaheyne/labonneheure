@@ -18,6 +18,9 @@
                 <li class="nav-item {{ app.request.get('_route') == 'demo_images_gallery' ? 'active' }}">
                     <a class="nav-link" href="{{ path('demo_images_gallery') }}">Gallery</a>
                 </li>
+                <li class="nav-item {{ app.request.get('_route') == 'demo_paralax' ? 'active' }}">
+                    <a class="nav-link" href="{{ path('demo_paralax') }}">Paralax</a>
+                </li>
             </ul>
         </div>
     </nav>
