@@ -1,7 +1,11 @@
 .musique {
 
   main {
-    background: url(images/couvfacebook2.jpg);
+    background: url(images/couvfacebook2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
 }
