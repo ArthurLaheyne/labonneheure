@@ -23,6 +23,7 @@ Encore
     .addEntry('other-page', './assets/js/demo/other-page.js')
     .addEntry('full-video-background', './assets/js/demo/full-video-background.js')
     .addEntry('paralax', './assets/js/demo/paralax.js')
+    .addEntry('animate', './assets/js/demo/animate.js')
 
     .addEntry('demo-images-gallery', './assets/js/demo/images-gallery.js')
     //.addEntry('page2', './assets/js/page2.js')

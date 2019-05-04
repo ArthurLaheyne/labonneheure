@@ -56,4 +56,12 @@ class DemoController extends Controller
     {
         return $this->render('demo/paralax.html.twig');
     }
+
+    /**
+     * @Route("/demo/animate", name="demo_animate")
+     */
+    public function animate()
+    {
+        return $this->render('demo/animate.html.twig');
+    }
 }
