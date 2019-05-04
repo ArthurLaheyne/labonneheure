@@ -2,6 +2,86 @@
 
   main {
 
+    .paragraph {
+        height: 100vh;
+        position: relative;
+
+        &.paragraph-1 {
+            color: #ddd;
+            background: url(images/couvfacebook2.jpg) no-repeat center center; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
+
+        &.paragraph-2 {
+            color: #ddd;
+            background-color: #282E34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
+
+        &.paragraph-3 {
+            color: #ddd;
+            background-color: #282E34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
+    }
+
+    .bgimg {
+        position: relative;
+        // opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: calc(100vh - 56px);
+      
+    }
+      
+    .bgimg-2 {
+        background-image: url("/demo/images/img_parallax2.jpg");
+    }
+      
+    .bgimg-3 {
+        background-image: url("/demo/images/img_parallax3.jpg");
+    }
+
+    .bgimg-4 {
+        background-image: url("/demo/images/img_parallax.jpg");
+    }
+      
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+      
+    .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+      
+    h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+    }
+
     h1 {
         text-align: center;
         margin-top: 100px;
@@ -13,9 +93,9 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        min-width: 100%; 
+        min-width: 100%;
         min-height: 100%;
-        z-index: -1;
+        z-index: -9999;
         -webkit-filter: blur(0px) brightness(43%) sepia(79%);
         filter: blur(0px) brightness(43%) sepia(79%);
     }
@@ -36,11 +116,8 @@
         color: black;
     }
 
-    #myBtnVolume {
-        position: fixed;
-        bottom: 50px;
-        right: 0;
-        margin: 0 20px 20px 0;
+    .button-control {
+        position: absolute;
         border-radius: 43px;
         border: white solid 2px;
         width: 50px;
@@ -48,6 +125,41 @@
         cursor: pointer;
         background-color: black;
         color: white;
+
+        &#myBtnVolume {
+            bottom: 50px;
+            right: 50px;
+        }
+
+        &#bgimg-1-next {
+            bottom: 50px;
+            left: 50px;
+        }
+
+        &#paragraph-1-next {
+            bottom: 50px;
+            left: 50px;
+        }
+
+        &#bgimg-2-next {
+            bottom: 50px;
+            left: 50px;
+        }
+
+        &#paragraph-2-next {
+            bottom: 50px;
+            left: 50px;
+        }
+
+        &#bgimg-3-next {
+            bottom: 50px;
+            left: 50px;
+        }
+
+        &#paragraph-3-next {
+            bottom: 50px;
+            left: 50px;
+        }
     }
 
   }
