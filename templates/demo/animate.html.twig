@@ -1,0 +1,21 @@
+{% extends 'demo/base.html.twig' %}
+
+{% block title %}Animate CSS{% endblock %}
+
+{% block main %}
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <p>
+            <a href="https://daneden.github.io/animate.css/" target="_blank" class="animated bounce btn btn-primary my-2">Animate css</a>
+        </p>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('animate') }}
+{% endblock %}
+
