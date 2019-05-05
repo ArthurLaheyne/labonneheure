@@ -10,6 +10,10 @@
         text-align: center;
         color: white;
         animation-duration: 5s;
+
+        img {
+            max-width: 100%;
+        }
     }
 
     .paragraph {
@@ -24,8 +28,20 @@
             -o-background-size: cover;
             background-size: cover;
             text-align: center;
-            padding: 50px 80px;
+            padding: 0;
             text-align: justify;
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                text-align: center;
+                margin-top: 30px;
+                text-shadow: 0px 0px 2px black;
+            }
+
+            img.image-tour {
+                width: 100%;
+            }
         }
 
         &.paragraph-2 {
@@ -57,15 +73,15 @@
     }
       
     .bgimg-2 {
-        background-image: url("/demo/images/img_parallax2.jpg");
+        background-image: url("/images/12832542_1684346578519671_6909709701326636323_n.jpg");
     }
       
     .bgimg-3 {
-        background-image: url("/demo/images/img_parallax3.jpg");
+        background-image: url("/images/29103988_2035311903423135_6393957503347982336_o.jpg");
     }
 
     .bgimg-4 {
-        background-image: url("/demo/images/img_parallax.jpg");
+        background-image: url("/images/58372867_2308191592801830_1708636220545826816_n.jpg");
     }
       
     .caption {
