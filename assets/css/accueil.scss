@@ -1,9 +1,19 @@
+@import "~animate.css/animate.min.css";
+
 .accueil {
 
   main {
 
+    h1 {
+        margin: 0 50px;
+        padding-top: 25vh;
+        text-align: center;
+        color: white;
+        animation-duration: 5s;
+    }
+
     .paragraph {
-        height: 100vh;
+        min-height: 100vh;
         position: relative;
 
         &.paragraph-1 {
@@ -42,7 +52,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: calc(100vh - 56px);
+        min-height: 100vh;
       
     }
       
@@ -82,17 +92,10 @@
         color: #111;
     }
 
-    h1 {
-        text-align: center;
-        margin-top: 100px;
-        color: white;
-        text-transform: uppercase;
-    }
-
     #myVideo {
         position: fixed;
         right: 0;
-        bottom: 0;
+        top: 0;
         min-width: 100%;
         min-height: 100%;
         z-index: -9999;
@@ -136,8 +139,18 @@
             left: 50px;
         }
 
+        &#paragraph-1-previous {
+            bottom: 150px;
+            left: 50px;
+        }
+
         &#paragraph-1-next {
             bottom: 50px;
+            left: 50px;
+        }
+
+        &#bgimg-2-previous {
+            bottom: 150px;
             left: 50px;
         }
 
@@ -146,8 +159,18 @@
             left: 50px;
         }
 
+        &#paragraph-2-previous {
+            bottom: 150px;
+            left: 50px;
+        }
+
         &#paragraph-2-next {
             bottom: 50px;
+            left: 50px;
+        }
+
+        &#bgimg-3-previous {
+            bottom: 150px;
             left: 50px;
         }
 
@@ -156,7 +179,22 @@
             left: 50px;
         }
 
+        &#paragraph-3-previous {
+            bottom: 150px;
+            left: 50px;
+        }
+
         &#paragraph-3-next {
+            bottom: 50px;
+            left: 50px;
+        }
+
+        &#bgimg-4-previous {
+            bottom: 150px;
+            left: 50px;
+        }
+
+        &#bgimg-4-next {
             bottom: 50px;
             left: 50px;
         }
