@@ -1,0 +1,20 @@
+<div style="position: relative">
+    {% block ecran %}
+    {% endblock %}
+    <div style="
+        height: 250px;
+        width: 150px;
+        position: absolute;
+        bottom: 0;
+    ">
+        {% if previous is defined %}
+            <a href="#{{ previous }}"><button class="button-control previous" ><i class="fas fa-angle-double-up"></i></button></a>
+        {% endif %}
+        {% if next is defined %}
+            <a href="#{{ next }}"><button class="button-control next" ><i class="fas fa-angle-double-down"></i></button></a>
+        {% endif %}
+        {% if top is defined %}
+            <a href="#{{ top }}"><button class="button-control next" ><i class="fas fa-undo"></i></button></a>
+        {% endif %}
+    </div>
+</div>

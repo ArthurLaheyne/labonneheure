@@ -4,48 +4,35 @@
 {% block body_attribute %}class="accueil"{% endblock %}
 
 {% block main %}
-<div id="bgimg-1" class="bgimg bgimg-1">
-    <!-- The video -->
-    <video autoplay muted loop id="myVideo">
-        <source src="videos/la-bonne-heure-run.mp4" type="video/mp4">
-    </video>
-    <h1 class="animated pulse duration-15s infinite"><img src="/images/logo.png" alt="La Bonne Heure" /></h1>
-    <button class="button-control" id="myBtnVolume" ><i class="fas fa-volume-mute"></i></button>
-    <a href="#paragraph-1"><button class="button-control" id="bgimg-1-next" ><i class="fas fa-angle-double-down"></i></button></a>
+
+<div id="bgimg-1" class="bgimg-1">
+    {% include 'pages/ecrans/video-titre.html.twig' with {'next': 'paragraph-1'} %}
 </div>
-<div id="paragraph-1" class="paragraph paragraph-1" >
-    <img class="image-tour" src="/images/52590282_2268443073443349_315754897406427136_o (1).jpg" alt="Irish tour 2019" />
-    <a href="#bgimg-1"><button class="button-control" id="paragraph-1-previous" ><i class="fas fa-angle-double-up"></i></button></a>
-    <a href="#bgimg-2"><button class="button-control" id="paragraph-1-next" ><i class="fas fa-angle-double-down"></i></button></a>
+
+<div id="paragraph-1" class="paragraph-1" >
+    {% include 'pages/ecrans/concerts.html.twig' with {'previous': 'bgimg-1', 'next': 'bgimg-2'} %}
 </div>
-<div id="bgimg-2" class="bgimg bgimg-2">
-    <div class="caption">
-    </div>
-    <a href="#paragraph-1"><button class="button-control" id="bgimg-2-previous" ><i class="fas fa-angle-double-up"></i></button></a>
-    <a href="#paragraph-2"><button class="button-control" id="bgimg-2-next" ><i class="fas fa-angle-double-down"></i></button></a>
+
+<div id="bgimg-2" class="bgimg-2">
+    {% include 'pages/ecrans/presentation.html.twig' with {'previous': 'paragraph-1', 'next': 'bgimg-3'} %}
 </div>
-<div id="paragraph-2" class="paragraph paragraph-2" >
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-    <a href="#bgimg-2"><button class="button-control" id="paragraph-2-previous" ><i class="fas fa-angle-double-up"></i></button></a>
-    <a href="#bgimg-3"><button class="button-control" id="paragraph-2-next" ><i class="fas fa-angle-double-down"></i></button></a>
+
+<div id="bgimg-3" class="bgimg-3">
+    {% include 'pages/ecrans/albums.html.twig' with {'previous': 'bgimg-2', 'next': 'bgimg-4'} %}
 </div>
-<div id="bgimg-3" class="bgimg bgimg-3">
-    <div class="caption">
-    </div>
-    <a href="#paragraph-2"><button class="button-control" id="bgimg-3-previous" ><i class="fas fa-angle-double-up"></i></button></a>
-    <a href="#paragraph-3"><button class="button-control" id="bgimg-3-next" ><i class="fas fa-angle-double-down"></i></button></a>
+
+<div id="bgimg-4" class="bgimg-4">
+    {% include 'pages/ecrans/photo-escalier.html.twig' with {'previous': 'bgimg-3', 'next': 'bgimg-5'} %}
 </div>
-<div id="paragraph-3" class="paragraph paragraph-3" >
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-    <a href="#bgimg-3"><button class="button-control" id="paragraph-3-previous" ><i class="fas fa-angle-double-up"></i></button></a>
-    <a href="#bgimg-4"><button class="button-control" id="paragraph-3-next" ><i class="fas fa-angle-double-down"></i></button></a>
+
+<div id="bgimg-5" class="bgimg-5">
+    {% include 'pages/ecrans/videos.html.twig' with {'previous': 'bgimg-4', 'next': 'bgimg-6'} %}
 </div>
-<div id="bgimg-4" class="bgimg bgimg-4">
-    <div class="caption">
-    </div>
-    <a href="#paragraph-3"><button class="button-control" id="bgimg-4-previous" ><i class="fas fa-angle-double-up"></i></button></a>
-    <a href="#bgimg-1"><button class="button-control" id="bgimg-4-next" ><i class="fas fa-undo"></i></button></a>
+
+<div id="bgimg-6" class="bgimg-6">
+    {% include 'pages/ecrans/photo-muret.html.twig' with {'previous': 'bgimg-5', 'top': 'bgimg-1'} %}
 </div>
+
 {% endblock %}
 
 {% block stylesheets %}

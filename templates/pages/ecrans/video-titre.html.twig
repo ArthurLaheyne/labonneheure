@@ -1,0 +1,11 @@
+{% extends 'pages/ecrans/_button-control.html.twig' %}
+
+{% block ecran %}
+    <div style="height: 100vh">
+        <video autoplay muted loop id="myVideo">
+            <source src="videos/la-bonne-heure-run.mp4" type="video/mp4">
+        </video>
+        <h1 class="animated pulse duration-15s infinite"><img src="/images/logo.png" alt="La Bonne Heure" /></h1>
+        <button class="button-control" id="myBtnVolume" ><i class="fas fa-volume-mute"></i></button>
+    </div>
+{% endblock %}

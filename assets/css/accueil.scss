@@ -19,46 +19,46 @@
     .paragraph {
         min-height: 100vh;
         position: relative;
+    }
 
-        &.paragraph-1 {
-            color: #ddd;
-            background: url(images/couvfacebook2.jpg) no-repeat center center; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            text-align: center;
+    .paragraph-1 {
+        color: #ddd;
+        background: url(images/couvfacebook2.jpg) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        padding: 0;
+        text-align: justify;
+
+        ul {
+            list-style-type: none;
             padding: 0;
-            text-align: justify;
-
-            ul {
-                list-style-type: none;
-                padding: 0;
-                text-align: center;
-                margin-top: 30px;
-                text-shadow: 0px 0px 2px black;
-            }
-
-            img.image-tour {
-                width: 100%;
-            }
-        }
-
-        &.paragraph-2 {
-            color: #ddd;
-            background-color: #282E34;
             text-align: center;
-            padding: 50px 80px;
-            text-align: justify;
+            margin-top: 30px;
+            text-shadow: 0px 0px 2px black;
         }
 
-        &.paragraph-3 {
-            color: #ddd;
-            background-color: #282E34;
-            text-align: center;
-            padding: 50px 80px;
-            text-align: justify;
+        img.image-tour {
+            width: 100%;
         }
+    }
+
+    .paragraph-2 {
+        color: #ddd;
+        background-color: #282E34;
+        text-align: center;
+        padding: 50px 80px;
+        text-align: justify;
+    }
+
+    .paragraph-3 {
+        color: #ddd;
+        background-color: #282E34;
+        text-align: center;
+        padding: 50px 80px;
+        text-align: justify;
     }
 
     .bgimg {
@@ -71,16 +71,34 @@
         min-height: 100vh;
       
     }
+
+    .bgimg-fixed {
+        position: relative;
+        // opacity: 0.65;
+        background-attachment: initial;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
       
-    .bgimg-2 {
-        background-image: url("/images/12832542_1684346578519671_6909709701326636323_n.jpg");
     }
       
     .bgimg-3 {
+        background-image: url("/images/couvfacebook2.jpg");
+    }
+
+    .soundcloud-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+      
+    .bgimg-4 {
         background-image: url("/images/29103988_2035311903423135_6393957503347982336_o.jpg");
     }
 
-    .bgimg-4 {
+    .bgimg-6 {
         background-image: url("/images/58372867_2308191592801830_1708636220545826816_n.jpg");
     }
       
@@ -145,74 +163,19 @@
         background-color: black;
         color: white;
 
+        &.next {
+            bottom: 50px;
+            left: 50px;
+        }
+
+        &.previous {
+            bottom: 150px;
+            left: 50px;
+        }
+
         &#myBtnVolume {
             bottom: 50px;
             right: 50px;
-        }
-
-        &#bgimg-1-next {
-            bottom: 50px;
-            left: 50px;
-        }
-
-        &#paragraph-1-previous {
-            bottom: 150px;
-            left: 50px;
-        }
-
-        &#paragraph-1-next {
-            bottom: 50px;
-            left: 50px;
-        }
-
-        &#bgimg-2-previous {
-            bottom: 150px;
-            left: 50px;
-        }
-
-        &#bgimg-2-next {
-            bottom: 50px;
-            left: 50px;
-        }
-
-        &#paragraph-2-previous {
-            bottom: 150px;
-            left: 50px;
-        }
-
-        &#paragraph-2-next {
-            bottom: 50px;
-            left: 50px;
-        }
-
-        &#bgimg-3-previous {
-            bottom: 150px;
-            left: 50px;
-        }
-
-        &#bgimg-3-next {
-            bottom: 50px;
-            left: 50px;
-        }
-
-        &#paragraph-3-previous {
-            bottom: 150px;
-            left: 50px;
-        }
-
-        &#paragraph-3-next {
-            bottom: 50px;
-            left: 50px;
-        }
-
-        &#bgimg-4-previous {
-            bottom: 150px;
-            left: 50px;
-        }
-
-        &#bgimg-4-next {
-            bottom: 50px;
-            left: 50px;
         }
     }
 
